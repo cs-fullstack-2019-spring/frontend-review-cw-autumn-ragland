@@ -1,0 +1,34 @@
+/*container class for grid display*/
+.container{
+    display: grid;
+    grid-template-areas:
+    "button1 ."
+    "header1 ."
+    "section1 section1"
+    ". footer1";
+}
+/*border and spacing*/
+header,section,footer{
+    border: 1px solid gray;
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+}
+/*section for button from prob1-2*/
+article{
+    grid-area: button1;
+    padding: 5px;
+    margin: 5px;
+}
+
+header{
+    grid-area: header1;
+}
+
+section{
+    grid-area: section1;
+}
+
+footer{
+    grid-area: footer1;
+}
